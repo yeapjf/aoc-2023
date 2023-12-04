@@ -2,11 +2,14 @@ import { readFileSync } from 'fs'
 
 // Return [PART_1_ANSWER, PART_2_ANSWER]
 function getResults(inputPath: string): [number, number] {
+    let part1 = 0
+    let part2 = 0
+
     readFileSync(inputPath, 'utf-8')
         .trim()
         .split(/\r?\n/)
 
-    return [0, 0]
+    return [part1, part2]
 }
 
 // Test solution against sample input
